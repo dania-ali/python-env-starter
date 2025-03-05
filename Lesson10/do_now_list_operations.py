@@ -9,6 +9,9 @@ def remove_duplicates(list):
       new_list.append(item)
   return new_list
 
+print(f'Original List: {my_list}')
+list1 = remove_duplicates(my_list)
+print(f'New List: {list1}')
 
 def max_finder(list):
   max_num = 0

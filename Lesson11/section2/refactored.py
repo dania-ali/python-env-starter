@@ -1,4 +1,5 @@
 from random import randrange
+import unittest
 
 choices = ["Rock","Paper","Scissors"]
 
@@ -37,6 +38,17 @@ def main():
     play_again = input("Do you want to play again?: ").lower()
 
   print("Thank you for Playing!")
+
+def win_test(self):
+  self.assertEqual(play_game("Scissors", "Paper"), "You win!")
+
+def lose_test(self):
+  self.assertEqual(play_game("Scissors", "Rock"), "You lose!")
+
+
+def tie_test(self):
+  self.assertEqual(play_game("Scissors", "Scissors") "It's a tie!")
+
 
 if __name__ =="__main__":
   main()

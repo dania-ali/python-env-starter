@@ -1,4 +1,5 @@
 # This program is as imple bookstore demo
+# This program is as imple bookstore demo
 books = [
   ["Luis Paints the World","$53.00","3 stars"],
   ["The Bear and the Piano","$36.89", "1 stars"],
@@ -10,22 +11,21 @@ books = [
 
 #It prints out the star rating for a given book
 def get_star_count(book):
+    star_count_text = book[2]
+    star_count = 0
 
-  star_count_text = book[1]
-  star_count = 0
+    if star_count_text == '1 stars':
+        star_count = 1
+    if star_count_text == '2 stars':
+        star_count = 2
+    if star_count_text == '3 stars':
+        star_count = 3
+    if star_count_text == '4 stars':
+        star_count = 4
+    if star_count_text == '5 stars':
+        star_count = 5
 
-  if star_count_text == '1 stars':
-    star_count = 1
-  if star_count_text == '2 stars':
-    star_count = 2
-  if star_count_text == '3 stars':
-    star_count = 3
-  if star_count_text == '4 stars':
-    star_count = 4
-  if star_count_text == '5 stars':
-    star_count = 5
-
-  return star_count
+    return star_count
 
 
 #displays the books from the books list
